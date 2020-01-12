@@ -70,6 +70,8 @@ export default function Checkout() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
 
+  console.log("Here");
+
   const handleNext = () => {
     setActiveStep(activeStep + 1);
   };
@@ -80,14 +82,14 @@ export default function Checkout() {
 
   return (
     <React.Fragment>
-      <CssBaseline />
+      {/* <CssBaseline />
       <AppBar position="absolute" color="default" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
             Company name
           </Typography>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       <main className={classes.layout}>
         <Paper className={classes.paper}>
           <Typography component="h1" variant="h4" align="center">
